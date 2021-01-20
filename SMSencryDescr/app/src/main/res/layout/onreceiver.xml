@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/textView1"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Gönderen:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/senderNum"
+
+            android:layout_width="244dp"
+
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/textView2"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="16-karakterli güvenlik anahtarını gir:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+
+        android:id="@+id/secretKey"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:inputType="textPassword">
+
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+
+        android:id="@+id/textView3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Alınan şifreli mesaj:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+
+        android:id="@+id/encryptedMsg"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="130dp" />
+
+    <TextView
+
+        android:id="@+id/textView4"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Şifresi çözülmüş mesaj:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+
+        android:id="@+id/decryptedMsg"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="98dp"
+
+        android:layout_weight="0.05" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:id="@+id/submit"
+
+            android:layout_width="190dp"
+
+            android:layout_height="wrap_content"
+
+            android:text="Mesajı çöz"
+            app:backgroundTint="#009688"
+            app:icon="@android:drawable/ic_menu_send"
+            app:iconTintMode="src_atop" />
+
+        <Button
+
+            android:id="@+id/cancel"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="İPTAL"
+            app:backgroundTint="#E3236F"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel"
+            app:iconTintMode="src_atop" />
+
+    </LinearLayout>
+</LinearLayout>
